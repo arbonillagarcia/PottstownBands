@@ -1,0 +1,39 @@
+.header{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 4vw;
+} 
+
+@media screen and (min-width: 1200px) {
+  .header {
+     font-size: 50px;
+  }
+}
+
+.column {
+    margin-top: 120px;
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column p {
+    max-width: 700px;
+}
+
+.row {
+    max-width: 1080px;
+    margin-left: 25%;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
