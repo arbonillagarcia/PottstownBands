@@ -1,3 +1,5 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -78,6 +80,89 @@ body, html {
 .importantFormsCont {
     text-align: center;
     
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 1px solid #292929;
+    width: 205px;
+    height: 50px
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 1px solid #292929;
+    width: 205px;
+    height: 50px;
+}
+
+.button1:hover {
+    background-color: #e7e7e7;
+}
+
+.button2:hover {
+    background-color: #e7e7e7;
+}
+
+.buttons {
+    text-decoration: none;
+}
+
+a.animated-button.thar-three {
+    margin-top: 30px;
+	color: black;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid blue;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    font-size: 17px;
+0s;
+    width: 300px;
+}
+a.animated-button.thar-three:hover {
+	color: white !important;
+	background-color: transparent;
+	text-shadow: nthree;
+}
+a.animated-button.thar-three:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+a.animated-button.thar-three:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: blue;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+
+@media screen and (max-width: 600px) {
+  .insideContent {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .button1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .button2 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
