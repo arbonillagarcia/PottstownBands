@@ -46,8 +46,26 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 880px) {
   .column {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .column p {
+    width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+}
+
+@media screen and (max-width:880px) {
+  .column h2 {
+    width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
   }
 }

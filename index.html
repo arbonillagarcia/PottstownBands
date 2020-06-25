@@ -6,10 +6,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/hover.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/navbar.css">
-
+<link rel="stylesheet" href="css/hover.css" media="all">
 <body>
 
 <!-- Nav Bar -->
@@ -41,16 +41,17 @@
                  <a href="musicproduction.html">MUSIC PRODUCTION</a>
                  <a href="worldbeat.html">WORLD BEAT ENSEMBLE</a>
             </div>
+                </div>
         <a href="media.html" class="rightNav">MEDIA</a>
         <a href="calendar.html" class="rightNav">CALENDAR</a>
         <a href="contact.html" class="rightNav">CONTACT US</a>
-    </div>
+
 
       <div  class="w3-bar">
       </div>
   </div>
 </div>
-          <span style="font-size:30px;cursor:pointer; " class="w3-right" id="button" onclick="openNav()">&#9776;</span>
+          <div style="font-size:30px;cursor:pointer; " class="w3-right" id="button" onclick="openNav()">&#9776;</div>
     </div>
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -75,7 +76,7 @@
 <!-- Body Content -->
 <div class="picture">
 </div>
-<div class="bodyCont">
+<div class="bodyCont" >
     <div>
         <h1 class="welcome">Welcome!</h1>
         <h2 class="welcomeCont">Welcome to the Pottstown High School Bands website!</h2>
@@ -84,30 +85,38 @@
     <div>
         <h1 class="bandApp">BAND APP:</h1>
         <h2 class="bandAppCont">We use the BAND App to communicate with all members and parents of the various ensembles at Pottstown High School. If you are a member of the bands or a parent, please join the app via this link to receive up to date information</h2>
-        <center><a href="https://band.us/n/aaac1a0dw2k3z" class="btn btn-sm animated-button thar-three">Join the Band App</a></center>
     </div>
+    <center>
+        <a href="https://band.us/n/aaac1a0dw2k3z" class="button hvr-sweep-to-right">Join the Band App</a>
+    </center>
     <div class="hl2"></div>
     <div>
         <h1 class="importantForms">IMPORTANT FORMS:</h1>
         <h2 class="importantFormsCont">content</h2>
-        <div class="insideContent">
-        <center><embed src="https://drive.google.com/file/d/1OdV2uiQ9NY1joe2rNPfufozhOxJOKt85/preview" width="500" height="620">
-        <embed src="https://drive.google.com/file/d/1L1gEzOn4j_XaEClHkZA_HeK-Fr9VWbIx/preview" width="500" height="620">
-
+        
+        <div class="insideContent">   
+            <center>
+                <embed src="https://drive.google.com/file/d/1OdV2uiQ9NY1joe2rNPfufozhOxJOKt85/preview" width="500" height="620">
+                <embed src="https://drive.google.com/file/d/1L1gEzOn4j_XaEClHkZA_HeK-Fr9VWbIx/preview" width="500" height="620">
             </center>
         </div>
+        
         <center>
-            <button class="button button1"><a href="https://drive.google.com/file/d/1OdV2uiQ9NY1joe2rNPfufozhOxJOKt85/view" target="_blank" class="buttons">MARCHING BAND LETTER</a></button>
-            <button class="button button2"><a href="https://drive.google.com/file/d/1L1gEzOn4j_XaEClHkZA_HeK-Fr9VWbIx/view" target="_blank" class="buttons">MEDICAL FORM</a></button>
+            <a href="https://drive.google.com/file/d/1OdV2uiQ9NY1joe2rNPfufozhOxJOKt85/preview" class="button">MARCHING BAND LETTER</a>
+            <a href="https://drive.google.com/file/d/1OdV2uiQ9NY1joe2rNPfufozhOxJOKt85/preview" class="button">MEDICAL FORM</a>
         </center>
 
     </div>
     <div class="hl3"></div>
     <div>
         <h1 class="bandApp">FOLLOW US ON SOCIAL MEDIA:</h1>
-        <h2 class="bandAppCont">content</h2>
+        <center>
+            <a href="#" class="fa fa-instagram" id="social"></a>
+            <a href="#" class="fa fa-twitter" id="social"></a>
+        </center>
+        <div style="height: 20px;"></div>
     </div>
-
+</div>
 
 <!-- Scripts and Footer -->
 <script>
