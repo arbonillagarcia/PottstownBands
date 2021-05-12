@@ -16,7 +16,6 @@ img {vertical-align: middle;}
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: ;
   padding: 16px;
   margin-top: -22px;
   color: white;
@@ -35,6 +34,31 @@ img {vertical-align: middle;}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+   
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover, .next2:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -95,4 +119,34 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+@media screen and (max-width:880px) {
+    
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+    margin-left: -200px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover, .next2:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
 }

@@ -19,7 +19,7 @@ body, html {
 .picture {
     background-position: center;
     background-size: cover;
-    background-image: url("../images/test.jpg");
+    background-image: url("../images/PottstownMarching.jpg");
     min-height: 75%;
     background-repeat: no-repeat;
     background-attachment: fixed;
