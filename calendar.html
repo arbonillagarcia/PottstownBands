@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <head>
 <title>Pottstown Marching Band</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +12,51 @@
 <link rel="stylesheet" href="css/calendar.css">
 <link rel="icon" href="images/pottstownLogo.png">
 
+
+<link href='fullcalendar/main.css' rel='stylesheet' />
+    <script src='fullcalendar/main.js'></script>
+
+    <script>
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+
+    googleCalendarApiKey: 'AIzaSyBCKLErBtBi9fP3jUukk-idVg6WrENA2FY',
+    textColor: 'green',
+    events: 'vvn4aa20j2158u6ffnm79do3u4@group.calendar.google.com',
+    eventBackgroundColor: '#001284',
+    aspectRatio: 2,
+      });
+
+  calendar.render();
+});
+</script>
+
+<script>
+//Vertical Calendar
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendarVert');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'listWeek',
+    googleCalendarApiKey: 'AIzaSyBCKLErBtBi9fP3jUukk-idVg6WrENA2FY',
+    textColor: 'green',
+    events: 'vvn4aa20j2158u6ffnm79do3u4@group.calendar.google.com',
+    aspectRatio: 1,
+});
+
+
+  calendar.render();
+});
+
+$(".fc-button-month").hide();
+</script>
+
+
+</head>
 <body>
 
 <!-- Nav Bar -->
@@ -78,8 +124,14 @@
     <a href="contact.html">CONTACT&nbsp;US</a>
 </div>
 
-<!-- Body Content -->
-<!--<div class="picture2"></div>-->
+<div class="calendarPadding">
+<div id='calendar'></div>
+</div>
+
+<div class="calendarPaddingVert">
+<div id='calendarVert'></div>
+</div>
+<!--
 <div>  
     <h1 class="header">CALENDAR</h1>
         <div class="hl"></div>
@@ -92,6 +144,7 @@
         </center>
     </div>
 </div>
+-->
 
 <!-- Scripts and Footer -->
 <script type='text/javascript' src='fullcalendar/gcal.js'></script>
@@ -123,3 +176,5 @@ function closeNav() {
 
 </body>
 </html>
+
+

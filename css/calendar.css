@@ -29,6 +29,35 @@ p {
     max-width: 1000px;
 }
 
+.calendarPadding {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.calendarPaddingVert {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+@media only screen and (max-width: 800px) {
+    .calendarPadding{
+        display: none;
+      }
+}
+
+@media only screen and (max-width: 800px) {
+    .calendarPaddingVert{
+        padding-left: 4em;
+        padding-right: 4em;
+      }
+}
+
+@media only screen and (min-width: 800px) {
+    .calendarPaddingVert{
+        display: none;
+      }
+}
+
 @media screen and (max-width: 880px) {
     p {
     width: 85%;
