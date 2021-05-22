@@ -47,8 +47,8 @@ p {
 
 @media only screen and (max-width: 800px) {
     .calendarPaddingVert{
-        padding-left: 4em;
-        padding-right: 4em;
+        padding-left: 1em;
+        padding-right: 1em;
       }
 }
 
