@@ -18,11 +18,6 @@
     
 }
 
-.rightNav:hover{
-    color: #0067ff;
-    transition-duration: .4s;
-}
-
 .bar {
     background-color: white;
 }
@@ -46,11 +41,6 @@
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-}
-
-.dropbtn:hover  {
-    color: #0067ff;
-    transition: .4s;
 }
 
 .dropdown-content {
