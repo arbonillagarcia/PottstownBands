@@ -155,9 +155,7 @@
   position: absolute;
 }
 
-a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}

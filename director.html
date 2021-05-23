@@ -59,25 +59,54 @@
 </div>
     
 <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">HOME</a>
-    <a href="director.html">DIRECTOR&nbsp;OF&nbsp;BANDS</a>
-    <a href="marchingband.html">MARCHING&nbsp;BAND</a>
-    <a href="staff.html">STAFF</a>
-    <a href="encrypted.html">MEMBERS</a>
-    <a href="concert.html">CONCERT&nbsp;BAND</a>
-    <a href="jazz.html">JAZZ&nbsp;BAND</a>
-    <a href="audition.html">AUDITION&nbsp;MUSIC</a>
-    <a href="classes.html">CLASSES</a>
-    <a href="piano.html">PIANO</a>
-    <a href="guitar.html">GUITAR</a>
-    <a href="musicproduction.html">MUSIC&nbsp;PRODUCTION</a>
-    <a href="worldbeat.html">WORLD BEAT&nbsp;ENSEMBLE</a>
-    <a href="volunteer.html">VOLUNTEERS</a>
-    <a href="media.html">MEDIA</a>
-    <a href="calendar.html">CALENDAR</a>
-    <a href="contact.html">CONTACT&nbsp;US</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">HOME</a>
+  
+  <a href="director.html">DIRECTOR&nbsp;OF&nbsp;BANDS</a>
+  <button onclick="mySideDropDown()" class="sideNavDropDownCss">
+  <a>MARCHING&nbsp;BAND&emsp;&ensp;<i class="fa fa-caret-down"></i></a></button>
+      <div class="sideNavDropDown" id="sideDrop">
+          <a href="marchingband.html">MARCHING&nbsp;BAND</a>
+          <a href="staff.html">STAFF</a>
+          <a href="encrypted.html">MEMBERS</a>
+      </div>
+  <a href="concert.html">CONCERT&nbsp;BAND</a>
+  <button onclick="mySideDropDown2()" class="sideNavDropDownCss">
+      <a>JAZZ&nbsp;BAND&emsp;&ensp;<i class="fa fa-caret-down"></i></a></button>
+          <div class="sideNavDropDown" id="sideDrop2">
+              <a href="jazz.html">JAZZ&nbsp;BAND</a>
+              <a href="audition.html">AUDITION&nbsp;MATERIAL</a>
+          </div>
+  <button onclick="mySideDropDown3()" class="sideNavDropDownCss">
+      <a>CLASSES&emsp;&ensp;<i class="fa fa-caret-down"></i></a></button>
+          <div class="sideNavDropDown" id="sideDrop3">
+              <a href="classes.html">CLASSES</a>
+              <a href="piano.html">PIANO</a>
+              <a href="guitar.html">GUITAR</a>
+              <a href="musicproduction.html">MUSIC&nbsp;PRODUCTION</a>
+              <a href="worldbeat.html">WORLD BEAT&nbsp;ENSEMBLE</a>
+          </div>
+  <a href="volunteer.html">VOLUNTEERS</a>
+  <a href="media.html">MEDIA</a>
+  <a href="calendar.html">CALENDAR</a>
+  <a href="contact.html">CONTACT&nbsp;US</a>
 </div>
+
+<script>
+
+  function mySideDropDown(){
+      document.getElementById("sideDrop").classList.toggle("show");
+  }
+
+  function mySideDropDown2(){
+      document.getElementById("sideDrop2").classList.toggle("show");
+  }
+
+  function mySideDropDown3(){
+      document.getElementById("sideDrop3").classList.toggle("show");
+  }
+  
+</script>
 
 <!-- Body Content -->
 <!--<div class="picture2"></div>-->

@@ -61,23 +61,52 @@
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">HOME</a>
+    
     <a href="director.html">DIRECTOR&nbsp;OF&nbsp;BANDS</a>
-    <a href="marchingband.html">MARCHING&nbsp;BAND</a>
-    <a href="staff.html">STAFF</a>
-    <a href="encrypted.html">MEMBERS</a>
+    <button onclick="mySideDropDown()" class="sideNavDropDownCss">
+    <a>MARCHING&nbsp;BAND&emsp;&ensp;<i class="fa fa-caret-down"></i></a></button>
+        <div class="sideNavDropDown" id="sideDrop">
+            <a href="marchingband.html">MARCHING&nbsp;BAND</a>
+            <a href="staff.html">STAFF</a>
+            <a href="encrypted.html">MEMBERS</a>
+        </div>
     <a href="concert.html">CONCERT&nbsp;BAND</a>
-    <a href="jazz.html">JAZZ&nbsp;BAND</a>
-    <a href="audition.html">AUDITION&nbsp;MUSIC</a>
-    <a href="classes.html">CLASSES</a>
-    <a href="piano.html">PIANO</a>
-    <a href="guitar.html">GUITAR</a>
-    <a href="musicproduction.html">MUSIC&nbsp;PRODUCTION</a>
-    <a href="worldbeat.html">WORLD BEAT&nbsp;ENSEMBLE</a>
+    <button onclick="mySideDropDown2()" class="sideNavDropDownCss">
+        <a>JAZZ&nbsp;BAND&emsp;&ensp;<i class="fa fa-caret-down"></i></a></button>
+            <div class="sideNavDropDown" id="sideDrop2">
+                <a href="jazz.html">JAZZ&nbsp;BAND</a>
+                <a href="audition.html">AUDITION&nbsp;MATERIAL</a>
+            </div>
+    <button onclick="mySideDropDown3()" class="sideNavDropDownCss">
+        <a>CLASSES&emsp;&ensp;<i class="fa fa-caret-down"></i></a></button>
+            <div class="sideNavDropDown" id="sideDrop3">
+                <a href="classes.html">CLASSES</a>
+                <a href="piano.html">PIANO</a>
+                <a href="guitar.html">GUITAR</a>
+                <a href="musicproduction.html">MUSIC&nbsp;PRODUCTION</a>
+                <a href="worldbeat.html">WORLD BEAT&nbsp;ENSEMBLE</a>
+            </div>
     <a href="volunteer.html">VOLUNTEERS</a>
     <a href="media.html">MEDIA</a>
     <a href="calendar.html">CALENDAR</a>
     <a href="contact.html">CONTACT&nbsp;US</a>
 </div>
+
+<script>
+
+    function mySideDropDown(){
+        document.getElementById("sideDrop").classList.toggle("show");
+    }
+
+    function mySideDropDown2(){
+        document.getElementById("sideDrop2").classList.toggle("show");
+    }
+
+    function mySideDropDown3(){
+        document.getElementById("sideDrop3").classList.toggle("show");
+    }
+    
+</script>
 
 <!-- Body Content -->
 <!--<div class="picture2"></div>-->
@@ -142,7 +171,7 @@
                 </div>
                 <div class="column">
                     <h2>       
-            <div class="slideshow-container">
+            <div class="slideshow-container" style="width: 400px; right: 13px;">
 
         <div class="mySlides2 fade">
           <img src="images/1.jpg" style="width:400px; height: 400px; object-fit: cover;">
@@ -185,7 +214,7 @@
                 <div class="row">
                 <div class="column">
                     <h2>
-            <div class="slideshow-container">
+            <div class="slideshow-container" style="width: 400px; right: 13px;">
 
         <div class="mySlides3 fade">
           <img src="images/1.jpg" style="width:400px; height: 400px; object-fit: cover;">
@@ -233,7 +262,7 @@
                     <p>Hey guys!! I'm Lexi!! I am originally from Daniel Boone High School and I am now a senior at West Chester University studying Exercise Science to one day become a Physical Therapist some day! I spun with Daniel Boone for 7 years (middle and high school), spun with an independent colorguard (Classics Colorguard) for 4 years, spun in West Chester University's Golden Ram Marching Band this past fall and have been spinning at a different independent colorguard (Main Line Independent) for 2 years now. So excited to meet you all and have a great season!! </p>                </div>
                 <div class="column">
                     <h2>
-            <div class="slideshow-container">
+            <div class="slideshow-container" style="width: 400px; right: 13px;">
 
         <div class="mySlides4 fade">
           <img src="images/lexi1.jpg" style="width:400px; height: 400px; object-fit: cover;">
@@ -276,7 +305,7 @@
                 <div class="row">
                 <div class="column">
                     <h2>
-            <div class="slideshow-container">
+            <div class="slideshow-container" style="width: 400px; right: 13px;">
 
         <div class="mySlides5 fade">
           <img src="images/antonio1.jpg" style="width:400px; height: 400px; object-fit: cover;">
@@ -324,7 +353,7 @@
                     <p>Nick graduated from west chester university in january of 2019. While there, he studied classical percussion with Ralph Sorrentino and David Nelson. Nick marched in west chester's band (2015-2017) as well as pursued independent experiences with Imperial Dynasty, Skyliners, United Percussion, and Hawthorne Caballeros both in the battery, and front ensemble.He taught for four seasons at Hempfield High school as a battery tech winning two cavalcade championships and one percussion title. Last winter, Nick was on staff at United Percussion 2 and was slated to be a front ensemble tech for 7th regiment before the 2020 season was canceled</p>                </div>
                 <div class="column">
                     <h2>
-            <div class="slideshow-container">
+            <div class="slideshow-container" style="width: 400px; right: 13px;">
 
         <div class="mySlides6 fade">
           <img src="images/nick1.jpg" style="width:400px; height: 400px; object-fit: cover;">
@@ -367,7 +396,7 @@
                     <div class="row">
                 <div class="column">
                     <h2>
-            <div class="slideshow-container">
+            <div class="slideshow-container" style="width: 400px; right: 13px;">
 
         <div class="mySlides7 fade">
           <img src="images/1.jpg" style="width:400px; height: 400px; object-fit: cover;">
