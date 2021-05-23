@@ -137,6 +137,34 @@
   margin-left: 50px;
 }
 
+.sidenav a, .dropdown-btn {
+  cursor: pointer;
+  padding-left: -55px;
+}
+
+.sideNavDropDown {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+.show {
+  display: block;
+}
+
+.sideNavDropDownCss {
+  background-color: #111;
+  border:0px;
+  outline:0px;
+  margin-left: -6px;
+}
+
+.fa-caret-down {
+  margin-top: 5px;
+  position: absolute;
+}
+
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
